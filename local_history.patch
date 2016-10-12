@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/jonathan/obd_bt/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/jonathan/obd_bt/MainActivity.java	(revision )
++++ app/src/main/java/com/jonathan/obd_bt/MainActivity.java	(revision )
+@@ -597,7 +597,7 @@
+             private void receivedLine(final String message) {
+                 final String[] pieces = message.split(",");
+                 updateLog("LINE received");
+-                updateLog((string)pieces.length);
++                updateLog(message);
+ 
+                 if(pieces.length < 3) {
+                     Log.i(TAG, "Bad message: "+message);
